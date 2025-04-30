@@ -9,6 +9,7 @@ import ro.ase.acs.prototype.WoodBlock;
 
 public class Main {
     public static void main(String[] args) {
+        //prototype
 //        BuildingBlock block1 = new WoodBlock();
 //        block1.setX(10);
 //        block1.setY(12);
@@ -30,6 +31,7 @@ public class Main {
 //        }
         PrototypeCollection prototypeCollection = new PrototypeCollection();
 
+        //builder
         BuildingBlock block4 = prototypeCollection.getBlock("wood");
         block4.render();
 
