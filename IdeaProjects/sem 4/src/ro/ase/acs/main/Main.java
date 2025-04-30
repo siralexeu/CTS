@@ -10,6 +10,7 @@ import ro.ase.acs.singleton.LoggerV3;
 
 public class Main {
     public static void main(String[] args) {
+        //singleton
         Logger logger = Logger.getInstance();
         logger.log("Message from main");
 
@@ -24,6 +25,7 @@ public class Main {
 
         LoggerV3.INSTANCE.log("Message from mainV3");
 
+        //simplefactory
         RestApiFactory factory = new RestApiFactory();
         RestApi api = factory.getRestApi("development");
         api.connect();
