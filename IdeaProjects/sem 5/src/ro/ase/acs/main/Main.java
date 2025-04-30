@@ -9,6 +9,7 @@ import ro.ase.acs.singletonregistry.SingletonRegistry;
 
 public class Main {
     public static void main(String[] args) {
+        //singletonregistry
         SingletonRegistry singletonRegistry = new SingletonRegistry();
         SingletonRegistry.Logger logger = singletonRegistry.getSingleton(SingletonRegistry.Logger.class.getSimpleName());
         logger.log("Message");
@@ -16,6 +17,7 @@ public class Main {
         SingletonRegistry.DatabaseConnection databaseConnection = singletonRegistry.getSingleton("DatabaseConnection");
         databaseConnection.connect();
 
+        //factory
         AbstractDocumentFactory factory = new GoogleDocumentFactory();
         Document document = factory.getDocument(DocumentType.TEXT);
         document.setName("untitled");
