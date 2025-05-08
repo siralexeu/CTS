@@ -1,4 +1,4 @@
-package ro.ase.acs.adapter;
+package ro.ase.acs.adaptor;
 
 public interface AbstractBusTicketingSystem {
     void reserveSeat();
