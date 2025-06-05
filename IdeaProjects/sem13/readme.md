@@ -1,0 +1,3 @@
+Mergi în meniul Run → Edit Configurations…
+apasă pe butonul „+” și selectează „JUnit”.
+configurează rularea „All in package”(in loc de „Class”)
