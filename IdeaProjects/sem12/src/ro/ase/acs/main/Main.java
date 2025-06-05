@@ -8,6 +8,14 @@ import ro.ase.acs.template.Worker;
 public class Main {
     public static void main(String[] args) {
         //memento
+        VideoEditor videoEditor = new VideoEditor();
+        videoEditor.edit(5);
+        videoEditor.save();
+        System.out.println(videoEditor);
+        videoEditor.edit(3);
+        System.out.println(videoEditor);
+        videoEditor.undo();
+        System.out.println(videoEditor);
 
         //state
         VendingMachine vendingMachine = new VendingMachine();
