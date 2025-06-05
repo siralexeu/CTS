@@ -1,5 +1,6 @@
 package ro.ase.acs.main;
 
+import ro.ase.acs.memento.VideoEditor;
 import ro.ase.acs.state.VendingMachine;
 import ro.ase.acs.template.PartMover;
 import ro.ase.acs.template.RoboticArm;
