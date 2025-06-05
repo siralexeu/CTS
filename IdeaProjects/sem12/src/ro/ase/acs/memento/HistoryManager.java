@@ -1,4 +1,17 @@
 package ro.ase.acs.memento;
 
 public class HistoryManager {
+  private Stack<Video> history = new Stack<>();
+
+    public void addToHistory(Video video) {
+        try {
+            history.push((Video) video.clone());
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public Video getFromHistory() {
+        return history.pop();
+    }
 }
